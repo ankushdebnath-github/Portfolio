@@ -1,53 +1,90 @@
-# Personal Developer Portfolio 🚀
-
-[![Site preview](/public/assets/thumbnail.png)](https://figma-portfolio-ten.vercel.app/)
-
-Welcome to my developer portfolio! This project showcases my skills, projects, and experience as a Software Engineer and UI/UX Designer. Built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com). It not only provides a visually appealing representation of my work but also ensures optimal performance. View the [live site](https://figma-portfolio-ten.vercel.app/).
-
-# Features 🎉
-
-The whole [portfolio](https://figma-portfolio-ten.vercel.app/) is a React-based single page app built with Next.js in TypeScript, using only statically generated pages.
-
-- **Modern Design**: Beautiful, dark-themed UI designed in Figma with purple gradient accents
-- **Animated Typing Effect**: Dynamic text animation in the hero section that cycles through roles
-- **Responsive Layout**: Fully responsive design that works seamlessly on all devices
-- **Performance Optimized**: Built with Next.js 16 for optimal performance and SEO
-- **Project Showcase**: Featured projects section with detailed descriptions and links
-- **Smooth Animations**: Engaging user experience with smooth transitions and effects
-- **Analytics Integration**: Vercel Analytics for tracking website performance
-
-# Fonts ✍🏻
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load [Poppins](https://fonts.google.com/specimen/Poppins), a custom Google Font with multiple weights (300-900).
-
-# Project images 🖼️
-
-All project images live under `public/projects` and are referenced in the `Projects.tsx` component. The assets folder contains all icons, images, and other media files used throughout the portfolio.
-
-# ✨ Development
-
-```bash
-git clone git@github.com:ibrahimmemonn/Figma_Portfolio.git
-
-cd Figma_Portfolio/
-
-npm i
-
-npm run dev
-```
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-# 🚚 Deployment
-
-Every branch or Pull Request is automatically deployed by [Vercel](https://vercel.com/) with their GitHub integration, where the `main` branch is automatically aliased to [figma-portfolio-ten.vercel.app](https://figma-portfolio-ten.vercel.app/). A link to a preview deployment will appear under each Pull Request.
-
-# 🏛 Licenses
-
-© Copyright 2025 Ibrahim Memon
-
-Don't care if you fork & play with it, but you're not allowed to publish anything from it as a whole without my written permission. Also please be aware, the combination of typography, colors & layout makes up my brand identity. So please don't just clone everything, but rather do a remix!
-
----
-
-⭐ If you found this project helpful or interesting, please consider giving it a star!
+diff --git a/c:/Users/ankus/Downloads/Figma-Portfolio-main/Figma-Portfolio-main/README.md b/c:/Users/ankus/Downloads/Figma-Portfolio-main/Figma-Portfolio-main/README.md
+new file mode 100644
+--- /dev/null
++++ b/c:/Users/ankus/Downloads/Figma-Portfolio-main/Figma-Portfolio-main/README.md
+@@ -0,0 +1,85 @@
++# Ankush Debnath Portfolio
++
++[![Site preview](/public/assets/thumbnail.png)](https://your-portfolio-link-here)
++
++This is my personal cybersecurity portfolio built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com). It highlights my projects, certifications, achievements, education, CV, and hands-on security journey in a modern cyber-themed single-page experience.
++
++## Features
++
++- Cyber-inspired portfolio design with animated hero section
++- Rotating role text, custom cursor, and interactive motion effects
++- Featured cybersecurity projects with custom visuals
++- CV preview and download support
++- Dedicated sections for skills, training, certificates, achievements, and education
++- Recruiter-friendly `Why Hire Me` and stats sections
++- Fully responsive layout for desktop and mobile
++- Built with the Next.js App Router and static-friendly structure
++
++## Tech Stack
++
++- Next.js
++- TypeScript
++- Tailwind CSS
++- React Icons
++
++## Assets
++
++- Profile image: `public/profile.png`
++- CV file: `public/firecompass.pdf`
++- Project and UI assets: `public/`
++
++## Development
++
++```bash
++git clone <your-repo-link>
++
++cd Figma-Portfolio-main
++
++npm install
++
++npm run dev
++```
++
++Open `http://localhost:3000` to view it locally.
++
++You can start editing the portfolio from `app/page.tsx` and the components inside `app/components`.
++
++## Deployment
++
++This project can be deployed easily on [Vercel](https://vercel.com/).
++
++### Quick deploy steps
++
++```bash
++npm install
++npm run build
++npm run start
++```
++
++For production deployment:
++
++1. Push the project to GitHub.
++2. Import the repository into Vercel.
++3. Let Vercel detect Next.js automatically.
++4. Deploy.
++
++## Sections Included
++
++- Home
++- About
++- Skills
++- Projects
++- CV Preview
++- Why Hire Me
++- Stats
++- Training
++- Certificates
++- Achievements
++- Education
++- Contact
++
++## License
++
++Copyright 2026 Ankush Debnath
++
++This portfolio is personal to my brand, projects, and identity. Feel free to explore and take inspiration, but please do not republish it as-is.
