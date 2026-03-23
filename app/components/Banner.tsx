@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -194,19 +194,19 @@ export default function Banner(): React.JSX.Element {
           <div className="flex justify-center lg:justify-end">
             <div className="flex w-full max-w-[560px] flex-col gap-5 lg:items-end">
               <div className="relative mx-auto mt-2 w-fit lg:mx-0 lg:mt-0">
-                <div className="matrix-rain absolute inset-[-10%] rounded-full opacity-55" />
-                <div className="radar-sweep absolute inset-x-10 inset-y-18 rounded-full" />
-                <div className="orbital-ring absolute inset-x-6 inset-y-14 rounded-full border border-cyan-300/15" />
-                <div className="orbital-ring orbital-ring-delayed absolute inset-x-0 inset-y-8 rounded-full border border-violet-300/10" />
-                <div className="absolute inset-0 scale-110 rounded-full bg-cyan-400/15 blur-3xl" />
-                <div className="absolute -top-8 left-1/2 h-24 w-px -translate-x-1/2 bg-gradient-to-b from-cyan-300/0 via-cyan-300/70 to-cyan-300/0" />
-                <div className="absolute left-1/2 top-4 h-2 w-2 -translate-x-1/2 rounded-full bg-cyan-300 shadow-[0_0_18px_rgba(103,232,249,0.9)]" />
+                <div className="matrix-rain absolute inset-[-10%] z-0 rounded-full opacity-55" />
+                <div className="radar-sweep absolute inset-x-10 inset-y-18 z-0 rounded-full" />
+                <div className="orbital-ring absolute inset-x-6 inset-y-14 z-0 rounded-full border border-cyan-300/15" />
+                <div className="orbital-ring orbital-ring-delayed absolute inset-x-0 inset-y-8 z-0 rounded-full border border-violet-300/10" />
+                <div className="absolute inset-0 z-0 scale-110 rounded-full bg-cyan-400/15 blur-3xl" />
+                <div className="absolute -top-8 left-1/2 z-0 h-24 w-px -translate-x-1/2 bg-gradient-to-b from-cyan-300/0 via-cyan-300/70 to-cyan-300/0" />
+                <div className="absolute left-1/2 top-4 z-0 h-2 w-2 -translate-x-1/2 rounded-full bg-cyan-300 shadow-[0_0_18px_rgba(103,232,249,0.9)]" />
                 <Image
                   src="/profile.png"
                   alt="Ankush Debnath - Cybersecurity Enthusiast and Developer"
                   width={330}
                   height={330}
-                  className="profile-float hologram-flicker absolute max-w-md"
+                  className="profile-float hologram-flicker absolute z-30 max-w-md"
                   style={{ width: "auto", height: "auto" }}
                   priority
                 />
@@ -215,12 +215,12 @@ export default function Banner(): React.JSX.Element {
                   alt="Ankush Debnath - Cybersecurity Enthusiast and Developer"
                   width={330}
                   height={330}
-                  className="max-w-md"
+                  className="relative z-20 max-w-md"
                   style={{ width: "auto", height: "auto" }}
                   priority
                 />
 
-                <div className="hud-card absolute -left-10 top-6 rounded-2xl px-4 py-3 text-left shadow-lg">
+                <div className="hud-card absolute -left-16 top-2 z-10 rounded-2xl px-4 py-3 text-left shadow-lg lg:-left-20">
                   <p className="text-xs uppercase tracking-[0.25em] text-cyan-200/70">
                     Focus
                   </p>
@@ -228,7 +228,7 @@ export default function Banner(): React.JSX.Element {
                     Detection and Analysis
                   </p>
                 </div>
-                <div className="hud-card absolute -bottom-2 right-4 rounded-2xl px-4 py-3 text-left shadow-lg">
+                <div className="hud-card absolute -bottom-6 -right-4 z-10 rounded-2xl px-4 py-3 text-left shadow-lg lg:-right-8">
                   <p className="text-xs uppercase tracking-[0.25em] text-violet-200/70">
                     Strength
                   </p>
@@ -236,13 +236,13 @@ export default function Banner(): React.JSX.Element {
                     Hands-on security projects
                   </p>
                 </div>
-                <div className="hud-chip absolute -right-6 top-[40%] rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200 shadow-lg">
+                <div className="hud-chip absolute -right-10 top-[34%] z-10 rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200 shadow-lg lg:-right-14">
                   System Online
                 </div>
-                <div className="hud-chip absolute left-1/2 top-[78%] -translate-x-1/2 rounded-full px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-cyan-200 shadow-lg">
+                <div className="hud-chip absolute -left-6 bottom-12 z-10 rounded-full px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-cyan-200 shadow-lg lg:-left-10">
                   Threat Monitor Active
                 </div>
-                <div className="absolute left-2 bottom-20 text-[10px] uppercase tracking-[0.35em] text-cyan-200/50">
+                <div className="absolute -left-2 bottom-24 z-10 text-[10px] uppercase tracking-[0.35em] text-cyan-200/50 lg:-left-6">
                   X: 07.42 | Y: 19.84
                 </div>
               </div>
@@ -292,3 +292,6 @@ export default function Banner(): React.JSX.Element {
     </section>
   );
 }
+
+
+
