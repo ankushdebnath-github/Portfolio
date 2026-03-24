@@ -108,7 +108,11 @@ export default function Projects(): React.JSX.Element {
                 </div>
 
                 <div className={`${isEven ? "lg:col-start-1 lg:row-start-1" : ""}`}>
-                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem] border border-white/10 bg-[#0b1220] p-4 shadow-2xl">
+                    <div
+                      className={`desktop-project-shell relative aspect-[4/3] w-full overflow-hidden rounded-[2rem] border border-white/10 bg-[#0b1220] p-4 shadow-2xl ${
+                        isEven ? "desktop-project-shell-even" : ""
+                      }`}
+                    >
                     <div
                       className={`absolute inset-0 bg-gradient-to-br ${project.gradient}`}
                     />
@@ -133,7 +137,7 @@ export default function Projects(): React.JSX.Element {
                         {project.metrics.map((metric, metricIndex) => (
                           <div
                             key={metric}
-                            className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4"
+                            className="desktop-metric-chip rounded-2xl border border-white/10 bg-white/5 px-4 py-4"
                           >
                             <div className="mb-2 flex items-center gap-2 text-cyan-200">
                               {metricIndex % 2 === 0 ? (
@@ -156,11 +160,21 @@ export default function Projects(): React.JSX.Element {
                         {project.tags.map((tag) => (
                           <span
                             key={tag}
-                            className="rounded-full border border-white/12 bg-white/5 px-3 py-2 text-xs font-medium text-white/75"
+                            className="desktop-project-tag rounded-full border border-white/12 bg-white/5 px-3 py-2 text-xs font-medium text-white/75"
                           >
                             {tag}
                           </span>
                         ))}
+                      </div>
+                    </div>
+
+                    <div className="desktop-project-overlay pointer-events-none absolute inset-x-6 bottom-6 flex items-center justify-between gap-3 rounded-2xl border border-cyan-300/30 bg-[linear-gradient(180deg,rgba(8,15,28,0.96),rgba(17,10,34,0.94))] px-4 py-3">
+                      <p className="text-xs uppercase tracking-[0.2em] text-cyan-200/85">
+                        Hover Intel Enabled
+                      </p>
+                      <div className="inline-flex items-center gap-2 text-xs text-white/80">
+                        <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.9)]" />
+                        Live Analysis View
                       </div>
                     </div>
                   </div>

@@ -42,19 +42,13 @@ export default function Skills(): React.JSX.Element {
                     {skill.name.charAt(0)}
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold text-white">{skill.name}</h3>
-              </div>
 
-              <div className="mb-3 flex items-center justify-between text-sm text-white/60">
-                <span>Confidence</span>
-                <span>{skill.level}%</span>
-              </div>
-
-              <div className="h-2 w-full rounded-full bg-white/10">
-                <div
-                  className={`h-2 rounded-full bg-gradient-to-r ${skill.color} transition-all duration-1000`}
-                  style={{ width: `${skill.level}%` }}
-                />
+                <div className="flex w-full items-center justify-between">
+                  <div>
+                    <h3 className="text-xl font-semibold text-white">{skill.name}</h3>
+                    <p className="mt-1 text-sm text-white/70">Practical use in projects and labs.</p>
+                  </div>
+                </div>
               </div>
 
               <p className="mt-4 text-sm text-white/70">

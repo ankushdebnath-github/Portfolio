@@ -16,15 +16,17 @@ import RevealSection from "./components/RevealSection";
 import CyberBackground from "./components/CyberBackground";
 import CustomCursor from "./components/CustomCursor";
 import BootSequence from "./components/BootSequence";
+import DesktopCommandPalette from "./components/DesktopCommandPalette";
 
 export default function Home(): React.JSX.Element {
   return (
-    <main className="relative min-h-screen overflow-x-hidden bg-[#110720] text-white">
+    <main className="mobile-layout-root relative min-h-screen overflow-x-hidden bg-[#110720] text-white">
       <CyberBackground />
       <BootSequence />
       <CustomCursor />
       <div className="relative z-10">
         <Header />
+        <DesktopCommandPalette />
         <RevealSection>
           <Banner />
         </RevealSection>

@@ -14,8 +14,21 @@ export default function CustomCursor(): React.JSX.Element | null {
       return;
     }
 
+    let frame = 0;
+    let x = 0;
+    let y = 0;
+
     const handleMove = (event: MouseEvent) => {
-      setPosition({ x: event.clientX, y: event.clientY });
+      x = event.clientX;
+      y = event.clientY;
+
+      if (!frame) {
+        frame = window.requestAnimationFrame(() => {
+          setPosition({ x, y });
+          frame = 0;
+        });
+      }
+
       setActive(true);
     };
 
@@ -29,6 +42,10 @@ export default function CustomCursor(): React.JSX.Element | null {
     window.addEventListener("mouseup", handleUp);
 
     return () => {
+      if (frame) {
+        window.cancelAnimationFrame(frame);
+      }
+
       window.removeEventListener("mousemove", handleMove);
       window.removeEventListener("mouseout", handleLeave);
       window.removeEventListener("mousedown", handleDown);
